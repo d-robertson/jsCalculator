@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Title Page</title>
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+
+    <link href="https://fonts.googleapis.com/css?family=Space+Mono" rel="stylesheet">
+
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    <!-- jQuery -->
+    <script src="//code.jquery.com/jquery.js"></script>
+    <!-- Bootstrap JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
+    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.7/angular.min.js"></script>
+    <script src="app.js"></script>
+  </head>
+  <body ng-app="calcApp">
+    <div class="col-xs-12" ng-controller="calcCtrl">
+      <div class="title">
+        <h1 class="text-center">{{title}}</h1>
+      </div>
+      <div class="col-xs-8 calculatorBody">
+        <div class="row">
+          <button class="btn" ng-click="clearAll()">AC</button>
+          <button class="btn" ng-click="clearEntry()">CE</button>
+          <button class="btn" ng-click="button('/')">&divide</button>
+          <button class="btn" ng-click="button('*')">X</button>
+        </div>
+        <div class="row">
+          <button class="btn" ng-click="button(7)">7</button>
+          <button class="btn" ng-click="button(8)">8</button>
+          <button class="btn" ng-click="button(9)">9</button>
+          <button class="btn" ng-click="button('-')">-</button>
+        </div>
+        <div class="row">
+          <button class="btn" ng-click="button(4)">4</button>
+          <button class="btn" ng-click="button(5)">5</button>
+          <button class="btn" ng-click="button(6)">6</button>
+          <button class="btn" ng-click="button('+')">+</button>
+        </div>
+        <div class="row">
+          <button class="btn" ng-click="button(1)">1</button>
+          <button class="btn" ng-click="button(2)">2</button>
+          <button class="btn" ng-click="button(3)">3</button>
+          <button class="btn" ng-click="button(0)">0</button>
+          <button class="btn" ng-click="button('.')">.</button>
+          <button class="btn" ng-click="equals()">=</button>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
