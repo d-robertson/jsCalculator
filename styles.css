@@ -9,3 +9,46 @@ button:hover {
 .btn:hover {
 
 }
+
+.btn {
+  margin-top: 20px;
+  margin-left: 8px;
+  margin-right: 8px;
+  font-size: 30px;
+}
+
+.clearBtn {
+  width: 120px;
+  height: 120px;
+}
+
+.zeroBtn {
+  width: 256px;
+  height: 120px;
+}
+
+.equalsBtn {
+  width: 120px;
+  height: 256px;
+}
+
+.normalBtn {
+  width: 120px;
+  height: 120px;
+  border-radius: 10px;
+}
+
+.border {
+  border: solid black 1px;
+}
+
+.calculatorBody {
+  height: 800px;
+}
+
+.no-margin {
+  margin-left: 0px;
+  margin-right: 0px;
+  padding-left: 0px;
+  padding-right: 0px;
+}
