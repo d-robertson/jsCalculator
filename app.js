@@ -1,6 +1,6 @@
 angular.module('calcApp', [])
 .controller('calcCtrl', ['$scope', function($scope){
-  $scope.title = 'JScalculator';
+  $scope.title = 'JS Calculator';
   $scope.total = 0;
   $scope.entries = '';
   $scope.opperator = '';

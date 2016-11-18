@@ -4,10 +4,19 @@ body {
 
 button:hover {
   background-color: steelblue;
+  outline: 0px;
 }
 
-.btn:hover {
+.btn:focus {
+  outline: 0px;
+}
 
+.btn:active:focus {
+  outline: 0px;
+}
+
+.btn:active {
+  outline: 0px;
 }
 
 .btn {
@@ -16,26 +25,29 @@ button:hover {
   margin-right: 8px;
   font-size: 30px;
   border-radius: 10px;
+  /*border: solid black 1px;*/
+  box-shadow: black 4px 4px 4px -2px;
+  outline: 0px;
 }
 
 .clearBtn {
-  width: 120px;
-  height: 120px;
+  width: 100px;
+  height: 100px;
 }
 
 .zeroBtn {
-  width: 256px;
-  height: 120px;
+  width: 220px;
+  height: 100px;
 }
 
 .equalsBtn {
-  width: 120px;
-  height: 256px;
+  width: 100px;
+  height: 220px;
 }
 
 .normalBtn {
-  width: 120px;
-  height: 120px;
+  width: 100px;
+  height: 100px;
   border-radius: 10px;
 }
 
@@ -44,11 +56,16 @@ button:hover {
 }
 
 .calculatorBody {
+  margin-top: 100px;
   height: 800px;
+  background-color: grey;
+  border-radius: 50px;
+  box-shadow: black 4px 4px 20px 7px;
+  border: solid grey 4px;
 }
 
 .col-xs-2 {
-  margin-left: 50px;
+  margin-left: 0px;
   margin-right: 0px;
   padding-right: 0px;
   padding-left: 0px;
@@ -57,15 +74,40 @@ button:hover {
 .col-xs-7 {
   padding-right: 0px;
   margin-right: -18px;
-  margin-left: 50px;
+  margin-left: 93px;
   padding-left: 0px;
 }
 
-/*.col-xs-6 {
-  padding-left: 0px;
-  padding-right: 0px;
-  margin-right: 0px;
-  margin-left: 0px;
-}*/
+.col-xs-offset-3 {
+  margin-left: 480px;
+}
 
+.row {
+  margin-right: -15px;
+  margin-left: -30px;
+}
 
+.menu {
+  background-color: #FFF9D5;
+  width: 90%;
+  margin-left: 35px;
+  margin-top: 15px;
+  border-radius: 20px;
+  height: 100px;
+  border: solid grey 1px;
+}
+
+.metal.linear {
+  /*width: 100px;*/
+  /*font-size: 4em;
+*/  /*height: 80px;*/
+  /*border-radius: .5em;*/
+  background-image: -webkit-repeating-linear-gradient(left, hsla(0,0%,100%,0) 0%, hsla(0,0%,100%,0)   6%, hsla(0,0%,100%, .1) 7.5%),
+    -webkit-repeating-linear-gradient(left, hsla(0,0%,  0%,0) 0%, hsla(0,0%,  0%,0)   4%, hsla(0,0%,  0%,.03) 4.5%),
+    -webkit-repeating-linear-gradient(left, hsla(0,0%,100%,0) 0%, hsla(0,0%,100%,0) 1.2%, hsla(0,0%,100%,.15) 2.2%),
+    
+    linear-gradient(180deg, hsl(0,0%,78%)  0%, 
+    hsl(0,0%,90%) 47%, 
+    hsl(0,0%,78%) 53%,
+    hsl(0,0%,70%)100%);
+}

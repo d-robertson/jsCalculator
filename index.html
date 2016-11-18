@@ -21,57 +21,57 @@
     <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.7/angular.min.js"></script>
     <script src="app.js"></script>
   </head>
-  <body ng-app="calcApp" class="border">
-    <div class="border col-xs-12" ng-controller="calcCtrl">
-      <div class="border title">
-        <h1 class="border text-center">{{title}}</h1>
-      </div>
-      <div class="border col-xs-6 col-xs-offset-3 calculatorBody text-center">
-        <div class="border row">
-          <div class="border col-xs-7">
-            <button class="border btn clearBtn" ng-click="clearAll()">AC</button>
-            <button class="border btn clearBtn" ng-click="clearEntry()">CE</button>
-            <button class="border btn normalBtn" ng-click="button('/')">&divide</button>
+  <body ng-app="calcApp" class="">
+    <div class=" col-xs-12" ng-controller="calcCtrl">
+      <div class=" col-xs-5 col-xs-offset-3 calculatorBody text-center metal linear">
+        <div class=" title">
+          <h1 class=" text-center">{{title}}</h1>
+        </div>
+        <div class=" row menu">
+          <h3>{{total}}</h3>
+          <h5>{{entries}}</h5>
+        </div>
+        <div class=" row">
+          <div class=" col-xs-7">
+            <button class=" btn clearBtn" ng-click="clearAll()">AC</button>
+            <button class=" btn clearBtn" ng-click="clearEntry()">CE</button>
+            <button class=" btn normalBtn" ng-click="button('/')">&divide</button>
           </div>
-          <div class="col-xs-2 border">
-            <button class="border btn normalBtn" ng-click="button('*')">X</button>
+          <div class="col-xs-2 ">
+            <button class=" btn normalBtn" ng-click="button('*')">X</button>
           </div>
         </div>
-        <div class="border row">
-          <div class="border col-xs-7">
-            <button class="border btn normalBtn" ng-click="button('7')">7</button>
-            <button class="border btn normalBtn" ng-click="button('8')">8</button>
-            <button class="border btn normalBtn" ng-click="button('9')">9</button>
+        <div class=" row">
+          <div class=" col-xs-7">
+            <button class=" btn normalBtn" ng-click="button('7')">7</button>
+            <button class=" btn normalBtn" ng-click="button('8')">8</button>
+            <button class=" btn normalBtn" ng-click="button('9')">9</button>
           </div>
-          <div class="border col-xs-2">
-            <button class="border btn normalBtn" ng-click="button('-')">-</button>
-          </div>
-        </div>
-        <div class="border row">
-          <div class="border col-xs-7">
-            <button class="border btn normalBtn " ng-click="button('4')">4</button>
-            <button class="border btn normalBtn" ng-click="button('5')">5</button>
-            <button class="border btn normalBtn" ng-click="button('6')">6</button>
-          </div>
-          <div class="border col-xs-2">
-            <button class="border btn normalBtn" ng-click="button('+')">+</button>
+          <div class=" col-xs-2">
+            <button class=" btn normalBtn" ng-click="button('-')">-</button>
           </div>
         </div>
-        <div class="border row">
-          <div class="border col-xs-7">
-            <button class="border btn normalBtn" ng-click="button('1')">1</button>
-            <button class="border btn normalBtn" ng-click="button('2')">2</button>
-            <button class="border btn normalBtn" ng-click="button('3')">3</button>
-            <button class="border btn zeroBtn" ng-click="button('0')">0</button>
-            <button class="border btn normalBtn" ng-click="button('.')">.</button>
+        <div class=" row">
+          <div class=" col-xs-7">
+            <button class=" btn normalBtn " ng-click="button('4')">4</button>
+            <button class=" btn normalBtn" ng-click="button('5')">5</button>
+            <button class=" btn normalBtn" ng-click="button('6')">6</button>
           </div>
-          <div class="border col-xs-2">
-            <button class="border btn equalsBtn" ng-click="equals()">=</button>
+          <div class=" col-xs-2">
+            <button class=" btn normalBtn" ng-click="button('+')">+</button>
           </div>
         </div>
-        <div class="border row">
-          <h3>total: {{total}}</h3>
-          <h3>entries: {{entries}}</h3>
+        <div class=" row">
+          <div class=" col-xs-7">
+            <button class=" btn normalBtn" ng-click="button('1')">1</button>
+            <button class=" btn normalBtn" ng-click="button('2')">2</button>
+            <button class=" btn normalBtn" ng-click="button('3')">3</button>
+            <button class=" btn zeroBtn" ng-click="button('0')">0</button>
+            <button class=" btn normalBtn" ng-click="button('.')">.</button>
+          </div>
+          <div class=" col-xs-2">
+            <button class=" btn equalsBtn" ng-click="equals()">=</button>
+          </div>
         </div>
       </div>
     </div>
