@@ -3,7 +3,7 @@ body {
 }
 
 button:hover {
-  background-color: steelblue;
+  /*background-color: steelblue;*/
   outline: 0px;
 }
 
@@ -56,8 +56,8 @@ button:hover {
 }
 
 .calculatorBody {
-  margin-top: 100px;
-  height: 800px;
+  margin-top: 70px;
+  height: 850px;
   background-color: grey;
   border-radius: 50px;
   box-shadow: black 4px 4px 20px 7px;
@@ -110,4 +110,8 @@ button:hover {
     hsl(0,0%,90%) 47%, 
     hsl(0,0%,78%) 53%,
     hsl(0,0%,70%)100%);
+}
+
+.bottom {
+  margin-bottom: 50px;
 }
